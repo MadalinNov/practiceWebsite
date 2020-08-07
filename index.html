@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- FONT AWESOME -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+
+  <!--WINDOW SIZE CHECK -->
+<span id="height"></span></p>
+<span id="width"></span></p>
+  <!--NAVBAR-->
+  <nav class='navbar'>
+    <div class="links">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <li class='menu'><a href="#">Menu</a></li>
+      <div class='logo'>
+        <img src="images/logo.png" alt="">
+      </div>
+    </div>
+  </nav>
+<!--SIDEBAR-->
+<nav class='sidebar'>
+  <div class="links">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <li class='close'><a href="#"><i class="fas fa-window-close"></i></a></li>
+  </div>
+</nav>
+  <!--INDEX-->
+  <section id='mainSection'>
+
+
+    <section id="index">
+      <video class='showcase' src="videos\SmartHouse.mp4" autoplay muted loop poster='images\poster.png'></video>
+      <button class='pause' type="button" name="button">Pause Video</button>
+      <button class='play' type="button" name="button">Play Video</button>
+    </section>
+
+    <!--ABOUT-->
+    <section id="about">
+      <div class="bg">
+        <h1 class='brand'>SmartHouse Solutions</h1>
+        <p class='brandIntro'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim iste veritatis cum in facilis eius ex, nam unde fuga, illo, ad placeat voluptate provident alias.</p>
+      </div>
+      <div class="dateTime">
+        <h1 class='date'></h1>
+        <h2 class='time'></h2>
+      </div>
+    </section>
+
+    <!--PRODUCTS-->
+    <section id="products">
+      <div class="row">
+        <div class="column">
+          <div class="card card1">
+            <img class="card-img-top" src="products\heng-lamp.jpeg" alt="Card image cap" height="300px">
+            <div class="card-body">
+              <h5 class="card-title">Heng Lamp</h5>
+              <p class="card-text">This lamp is breaking away from traditions, with a switch in mid-air. Its unique design brings magic into your life.</p>
+              <button type="button" class='btn btnLargeScreen btnProductOne'name="button">Check Out Now</button>
+              <button type="button" class='btn btnProductMobile'name="button"><a href="#contact"></a>Check Out Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card card2">
+            <img class="card-img-top" src="products\amazon-echo.jpg" alt="Card image cap" height="300px">
+            <div class="card-body">
+              <h5 class="card-title">Amazon Echo Dot</h5>
+              <p class="card-text">Amazon's most popular smart speaker: now with a fabric design and improved speaker for richer and louder sound...</p>
+              <button type="button" class='btn btnLargeScreen btnProductTwo'name="button">Check Out Now</button>
+              <button type="button" class='btn btnProductMobile'name="button"><a href="#contact">Check Out Now</a></button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="column">
+          <div class="card card3">
+            <img class="card-img-top" src="products\brilliant-controll.jpg" alt="Card image cap" height="300px;">
+            <div class="card-body">
+              <h5 class="card-title">Brilliant Control</h5>
+              <p class="card-text">The Brilliant Control is a unique wall switch that uses Wi-Fi to connect to and control various smart devices in your home.</p>
+              <button type="button" class='btn btnLargeScreen btnProductThree'name="button">Check Out Now</button>
+              <button type="button" class='btn btnProductMobile'name="button"><a href="#contact">Check Out Now</a></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row2">
+        <!-- //////////////////////////// -->
+        <div class="product product0">
+          <div class="videoPresentation01">
+            <video class='presentation' src="videos\heng-lamp.mp4" autoplay loop muted width="100%" height="100%"></video>
+          </div>
+          <div class="about01">
+            <div class="specs">
+              <table>
+                <th>Specs</th>
+                <tr>
+                  <td>Switch Style</td>
+                  <td>Touch</td>
+                </tr>
+                <tr>
+                  <td>Item Dimensions </td>
+                  <td>16x8x2.8i</td>
+                </tr>
+                <tr>
+                  <td>Wattage</td>
+                  <td>4 Watts</td>
+                </tr>
+                <tr>
+                  <td>Material</td>
+                  <td>Wood</td>
+                </tr>
+              </table>
+            </div>
+            <h1 class='price'>$84.95</h1>
+            <button class='buy' type="button" name="button"><a href="#contact">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product">
+        </div>
+        <div class="product">
+        </div>
+        <!-- //////////////////////////// -->
+        <div class="product product1">
+          <div class="videoPresentation01">
+            <video class='presentation' src="videos\amazon-dot.mp4" autoplay loop muted width="100%" height="100%"></video>
+          </div>
+          <div class="about01">
+            <div class="specs">
+              <table>
+                <th>Specs</th>
+                <tr>
+                  <td>Color</td>
+                  <td>Charcoal</td>
+                </tr>
+                <tr>
+                  <td>Connectivity Interfaces</td>
+                  <td>Bluetooth, IEEE 802.11a/b/g/n</td>
+                </tr>
+                <tr>
+                  <td>Internet Streaming Services</td>
+                  <td>Amazon Music, Audible, NPR, Pandora, SiriusXM internet radio, Spotify</td>
+                </tr>
+              </table>
+            </div>
+            <h1 class='price'>$64.95</h1>
+            <button class='buy' type="button" name="button"><a href="#contact">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product product2">
+          <div class="videoPresentation01">
+            <video class='presentation' src="videos\brillianSwitch.mp4" autoplay loop muted width="100%" height="100%"></video>
+          </div>
+          <div class="about01">
+            <div class="specs">
+              <table>
+                <th>Specs</th>
+                <tr>
+                  <td>Smart Home Control</td>
+                  <td>Connects to compatible smart home products over Wi-F</td>
+                </tr>
+                <tr>
+                  <td>Alexa in every room</td>
+                  <td>Ask Alexa for home control, news, sports, and more.</td>
+                </tr>
+                <tr>
+                  <td>Smart lights</td>
+                  <td>Turns any lights into smart lights.</td>
+                </tr>
+              </table>
+            </div>
+            <h1 class='price'>$284.95</h1>
+            <button class='buy' type="button" name="button"><a href="#contact">Buy Now</a></button>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <!--CONTACT-->
+    <section id="contact">
+    <div class="container">
+      <form action="index.html" method="post">
+
+        <label for="name">
+          <span>Name</span>
+        </label>
+        <input type="text" name="name">
+
+        <label for="lastName">
+          <span>Last Name</span>
+        </label>
+        <input type="text" name="lastName" value="">
+
+        <label for="number">
+        <span>Phone Number</span>
+        </label>
+        <input type="number" name="number" value="">
+
+        <label for="email">
+        <span>eMail</span>
+        </label>
+        <input type="email" name="email" value="">
+        <label class='textarea' for="message">
+          <span>Your Message</span>
+        </label>
+        <textarea name="message" rows="8" cols="80"></textarea>
+      </form>
+      <a class='send' href=""><svg><rect></rect></svg>Send</a>
+    </div>
+    </section>
+  </section>
+  <button class='back__top' type="button" name="button"><a href="#index"><i class="fas fa-arrow-alt-circle-up"></i></a></button>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
