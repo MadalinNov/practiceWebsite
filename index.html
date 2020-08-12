@@ -3,174 +3,238 @@
 
 <head>
   <meta charset="utf-8">
-  <meta id="myViewport" name="viewport" content="width=device-width" />
-  <title></title>
-  <!-- FONTAWESOME -->
+  <!-- FONT AWESOME -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!-- GOOGLEFONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- IPAD PRO -->
-  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1024px) and (max-device-width: 1366px) " href="css\ipadPro.css" />
-  <!-- Tablet CSS -->
-  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="css\tablet.css" />
-  <!-- MOBILE CSS -->
-  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 767px)" href="css\mobile.css" />
-
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <title></title>
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <div id="navbar">
-    <div class="brand"><a href="#">OfficeTools</a></div>
+
+  <!--WINDOW SIZE CHECK -->
+<span id="height"></span></p>
+<span id="width"></span></p>
+  <!--NAVBAR-->
+  <nav class='navbar'>
     <div class="links">
-      <ul class='nav-links'>
-        <li class='nav-link'><a href="#home">Home</a></li>
-        <li class='nav-link'><a href="#tools">Tools</a></li>
-        <li class='nav-link'><a href="#contact">Contact</a></li>
-        <li class='nav-link'><a class='cart' href=""><i class="fas fa-shopping-cart"></i></a></li>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      <li class='menu'><a href="#">Menu</a></li>
+      <div class='logo'>
+        <img src="images/logo.png" alt="">
+      </div>
     </div>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
+  </nav>
+<!--SIDEBAR-->
+<nav class='sidebar'>
+  <div class="links">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <li class='close'><a href="#"><i class="fas fa-window-close"></i></a></li>
   </div>
+</nav>
+  <!--INDEX-->
+  <section id='mainSection'>
 
-  <!--WRAPPER SECTION-->
-  <section id='main'>
-    <!--HOME SECTION-->
-    <section id='home'>
-      <div class='introduction'>
-        <h1>We go through the must-have features of an office chair, to protect your spine and help your body relax while you work.</h1>
-        <p>Check out our new collection of leather office chairs and get yours now for a whopping 20% discount</p>
-        <div class="buttons">
-          <button class='cta cta-check' type="button" name="button"><a href="#tools">Check More</a></button>
-          <button class='cta cta-buy' type="button" name="button">Add to Cart</button>
-        </div>
-      </div>
 
-      <div class="showcaseImage">
-        <img class='introImage' src="images\office-chari.png" alt="">
-      </div>
-
+    <section id="index">
+      <video class='showcase' src="videos\SmartHouse.mp4" autoplay muted loop poster='images\poster.png'></video>
+      <button class='pause' type="button" name="button">Pause Video</button>
+      <button class='play' type="button" name="button">Play Video</button>
     </section>
-    <!--TOOLS SECTION-->
-    <section id='tools'>
-      <div>
-        <h1 class='text'>Our range of office tools</h1>
+
+    <!--ABOUT-->
+    <section id="about">
+      <div class="bg">
+        <h1 class='brand'>SmartHouse Solutions</h1>
+        <p class='brandIntro'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim iste veritatis cum in facilis eius ex, nam unde fuga, illo, ad placeat voluptate provident alias.</p>
       </div>
-      <div class="toolsContainer">
-        <div class="item1">
-          <div class="itemImg">
-            <img src="images\office_lamp.jpg" alt="">
-          </div>
-          <div class="itemText">
-            <h1>Light up your work environment using our latest lamp model</h1>
-            <p>Price $25.00</p>
-            <button class='addtoCart' type="button" name="button">Add to Cart</button>
-          </div>
-        </div>
-
-
-        <div class="item2">
-          <div class="itemImg">
-            <img src="images\feet_hammok.webp" alt="">
-          </div>
-          <div class="itemText">
-            <h1>Enjoy the ultimate working experience with our silk hammok</h1>
-            <p>Price $45.00</p>
-            <button class='addtoCart' type="button" name="button">Add to Cart</button>
-          </div>
-        </div>
-
-
-        <div class="item3">
-          <div class="itemImg">
-            <img src="images\desk-plant.jpg" alt="">
-          </div>
-          <div class="itemText">
-            <h1>Freshen your work environment with some green leaves</h1>
-            <p>Price $15.00</p>
-            <button class='addtoCart' type="button" name="button">Add to Cart</button>
-          </div>
-        </div>
-
-
-        <div class="item4">
-          <div class="itemImg">
-            <img src="images\desk-organizer.jpg" alt="">
-          </div>
-          <div class="itemText">
-            <h1>Keep your stuff togheter using this cool looking toolbox</h1>
-            <p>Price $33.00</p>
-            <button class='addtoCart' type="button" name="button">Add to Cart</button>
-          </div>
-        </div>
-
-
-        <div class="item5">
-          <div class="itemImg">
-            <img src="images\coffee-mug.jpg" alt="">
-          </div>
-          <div class="itemText">
-            <h1>Enjoy your morning energiser</h1> <br>
-            <p>Price $10.00</p>
-            <button class='addtoCart' type="button" name="button">Add to Cart</button>
-          </div>
-        </div>
-
-
-        <div class="item6">
-          <div class="itemImg">
-            <img src="images\phone-charger.jpg" alt="">
-          </div>
-          <div class="itemText">
-            <h1>Never run out of battery</h1> <br>
-            <p>Price $74.00</p>
-            <button class='addtoCart' type="button" name="button">Add to Cart</button>
-          </div>
-        </div>
+      <div class="dateTime">
+        <h1 class='date'></h1>
+        <h2 class='time'></h2>
+      </div>
     </section>
-    <!--Contact Section-->
-    <section id='contact'>
 
-      <div class="container">
-        <h1>Get in Touch</h1>
-        <label for="Name"><span>Name</span></label>
-        <input type="text" name="Name" value="">
+    <!--PRODUCTS-->
+    <section id="products">
+      <div class="row">
+        <div class="column">
+          <div class="card card1">
+            <img class="card-img-top" src="products\heng-lamp.jpeg" alt="Card image cap" height="300px">
+            <div class="card-body">
+              <h5 class="card-title">Heng Lamp</h5>
+              <p class="card-text">This lamp is breaking away from traditions, with a switch in mid-air. Its unique design brings magic into your life.</p>
+              <button type="button" class='btn btnLargeScreen btnProductOne'name="button">Check Out Now</button>
+              <button type="button" class='btn btnProductMobile'name="button"><a href="#contact"></a>Check Out Now</button>
+            </div>
+          </div>
+        </div>
 
-        <label for="email"><span>eMail</span></label>
-        <input type="text" name="email" value="" autocomplete="off">
+        <div class="column">
+          <div class="card card2">
+            <img class="card-img-top" src="products\amazon-echo.jpg" alt="Card image cap" height="300px">
+            <div class="card-body">
+              <h5 class="card-title">Amazon Echo Dot</h5>
+              <p class="card-text">Amazon's most popular smart speaker: now with a fabric design and improved speaker for richer and louder sound...</p>
+              <button type="button" class='btn btnLargeScreen btnProductTwo'name="button">Check Out Now</button>
+              <button type="button" class='btn btnProductMobile'name="button"><a href="#contact">Check Out Now</a></button>
+            </div>
+          </div>
+        </div>
 
-        <label for="birth"><span>Birthday</span></label>
-        <input type="date" name="birth" value="">
 
-        <label for="message"><span>Message</span></label>
-        <textarea name="message" rows="5" cols="30"></textarea>
+        <div class="column">
+          <div class="card card3">
+            <img class="card-img-top" src="products\brilliant-controll.jpg" alt="Card image cap" height="300px;">
+            <div class="card-body">
+              <h5 class="card-title">Brilliant Control</h5>
+              <p class="card-text">The Brilliant Control is a unique wall switch that uses Wi-Fi to connect to and control various smart devices in your home.</p>
+              <button type="button" class='btn btnLargeScreen btnProductThree'name="button">Check Out Now</button>
+              <button type="button" class='btn btnProductMobile'name="button"><a href="#contact">Check Out Now</a></button>
+            </div>
+          </div>
+        </div>
 
-        <button class='send' type="button" name="button">Send</button>
       </div>
-      <div class="map">
-        <div class="mapouter">
-          <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=victory%20square%20bucharest&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
-              marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/"></a></div>
+      <div class="row2">
+        <!-- //////////////////////////// -->
+        <div class="product product0">
+          <div class="videoPresentation01">
+            <video class='presentation' src="videos\heng-lamp.mp4" autoplay loop muted width="100%" height="100%"></video>
+          </div>
+          <div class="about01">
+            <div class="specs">
+              <table>
+                <th>Specs</th>
+                <tr>
+                  <td>Switch Style</td>
+                  <td>Touch</td>
+                </tr>
+                <tr>
+                  <td>Item Dimensions </td>
+                  <td>16x8x2.8i</td>
+                </tr>
+                <tr>
+                  <td>Wattage</td>
+                  <td>4 Watts</td>
+                </tr>
+                <tr>
+                  <td>Material</td>
+                  <td>Wood</td>
+                </tr>
+              </table>
+            </div>
+            <h1 class='price'>$84.95</h1>
+            <button class='buy' type="button" name="button"><a href="#contact">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product">
+        </div>
+        <div class="product">
+        </div>
+        <!-- //////////////////////////// -->
+        <div class="product product1">
+          <div class="videoPresentation01">
+            <video class='presentation' src="videos\amazon-dot.mp4" autoplay loop muted width="100%" height="100%"></video>
+          </div>
+          <div class="about01">
+            <div class="specs">
+              <table>
+                <th>Specs</th>
+                <tr>
+                  <td>Color</td>
+                  <td>Charcoal</td>
+                </tr>
+                <tr>
+                  <td>Connectivity Interfaces</td>
+                  <td>Bluetooth, IEEE 802.11a/b/g/n</td>
+                </tr>
+                <tr>
+                  <td>Internet Streaming Services</td>
+                  <td>Amazon Music, Audible, NPR, Pandora, SiriusXM internet radio, Spotify</td>
+                </tr>
+              </table>
+            </div>
+            <h1 class='price'>$64.95</h1>
+            <button class='buy' type="button" name="button"><a href="#contact">Buy Now</a></button>
+          </div>
+        </div>
+        <div class="product product2">
+          <div class="videoPresentation01">
+            <video class='presentation' src="videos\brillianSwitch.mp4" autoplay loop muted width="100%" height="100%"></video>
+          </div>
+          <div class="about01">
+            <div class="specs">
+              <table>
+                <th>Specs</th>
+                <tr>
+                  <td>Smart Home Control</td>
+                  <td>Connects to compatible smart home products over Wi-F</td>
+                </tr>
+                <tr>
+                  <td>Alexa in every room</td>
+                  <td>Ask Alexa for home control, news, sports, and more.</td>
+                </tr>
+                <tr>
+                  <td>Smart lights</td>
+                  <td>Turns any lights into smart lights.</td>
+                </tr>
+              </table>
+            </div>
+            <h1 class='price'>$284.95</h1>
+            <button class='buy' type="button" name="button"><a href="#contact">Buy Now</a></button>
+          </div>
         </div>
       </div>
       </div>
-      <footer>
-        <p>All Rights Reserved.</p>
-      </footer>
+      </div>
+    </section>
+    <!--CONTACT-->
+    <section id="contact">
+    <div class="container">
+      <form action="index.html" method="post">
+
+        <label for="name">
+          <span>Name</span>
+        </label>
+        <input type="text" name="name">
+
+        <label for="lastName">
+          <span>Last Name</span>
+        </label>
+        <input type="text" name="lastName" value="">
+
+        <label for="number">
+        <span>Phone Number</span>
+        </label>
+        <input type="number" name="number" value="">
+
+        <label for="email">
+        <span>eMail</span>
+        </label>
+        <input type="email" name="email" value="">
+        <label class='textarea' for="message">
+          <span>Your Message</span>
+        </label>
+        <textarea name="message" rows="8" cols="80"></textarea>
+      </form>
+      <a class='send' href=""><svg><rect></rect></svg>Send</a>
+    </div>
     </section>
   </section>
-
-  <div class="backTop">
-    <a class='backTopButton' href="#navbar"><i class="fas fa-chevron-up"></i></a>
-  </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <button class='back__top' type="button" name="button"><a href="#index"><i class="fas fa-arrow-alt-circle-up"></i></a></button>
   <script src="app.js" charset="utf-8"></script>
 </body>
 
