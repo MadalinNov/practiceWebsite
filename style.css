@@ -4,11 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: sans-serif;
   height: 100vh;
@@ -46,7 +41,6 @@ button:focus {
 #height, #width{
   display: none;
 }
-
 /*NAVBAR*/
 .navbar, .sidebar {
   display: flex;
@@ -61,9 +55,9 @@ button:focus {
   transform: translate(-50%);
   opacity: 0.7;
 }
-.navbar{
+/* .navbar{
   position: fixed;
-}
+} */
 .logo {
   pointer-events: none;
   position: absolute;
@@ -95,19 +89,21 @@ button:focus {
   padding: 0 5%;
   list-style: none;
   font-size: 2.5rem;
-
 }
 
 .links ul li a {
-  background-image: -webkit-linear-gradient(92deg, #1b262c, #fdcb9e);
+  background-image: -webkit-linear-gradient(92deg, white, gray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: hue 10s infinite linear;
   color: white;
-  border-top: 5px solid #fdcb9e;
   cursor: pointer;
+  transition: 0.2s ease;
 }
-
+.links ul li:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
 .menu, .close {
   display: none;
   z-index: 100;
@@ -452,13 +448,13 @@ display: none;
   stroke-dashoffset: 320;
 }
 
-a:hover svg rect {
+.send:hover svg rect {
   stroke: #84a9ac, ;
   stroke-dasharray: 200 60;
   stroke-dashoffset: 0;
 }
 
-a:hover {
+.send:hover {
   box-shadow: 0 0 10px #84a9ac, 0 0 40px #84a9ac, 0 0 80px #84a9ac;
   color: white;
   border-radius: 5%;

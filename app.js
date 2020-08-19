@@ -13,6 +13,20 @@ var date = document.querySelector('.date');
 
 
 // EVENT LISTENERS
+//SMOOTH SCROLL
+$(document).ready(function() {
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function() {
+        window.location.hash = hash;
+      });
+    }
+  });
+});
 // INDEX SECTION
 videoPlay.addEventListener('click', playVideo);
 videoPause.addEventListener('click', pauseVideo);
@@ -36,7 +50,6 @@ function reportWindowSize() {
 
 window.onresize = reportWindowSize;
 // FUNCTIONS
-
 // SIDEBAR
 function showSidebar(){
   date.style.display='none';
